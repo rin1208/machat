@@ -1,9 +1,10 @@
 package main
 
 import (
+	"net/http"
+
 	"github.com/gin-gonic/gin"
 	"gopkg.in/olahol/melody.v1"
-	"net/http"
 )
 
 func main() {
@@ -28,5 +29,5 @@ func main() {
 		})
 	})
 
-	r.Run()
+	r.Run(":5000")
 }

@@ -10,6 +10,6 @@ RUN go build main.go
 FROM alpine
 
 WORKDIR /app
-EXPOSE 8080
+EXPOSE 5000
 COPY --from=go-builder /app/main  .
 CMD /app/main
